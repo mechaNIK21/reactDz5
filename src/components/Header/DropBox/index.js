@@ -6,9 +6,9 @@ import YouTube from './youtube.jpg'
 import Map from './map.jpg'
 import Gmail from './gmail.jpg'
 
-export default () => {
+export default props => {
     return (
-        <div className={style.Content}>
+        <div ref={props.myRef} className={style.Content}>
             <ContentBox way={YouTube}>YouTube</ContentBox>
             <ContentBox way={Map}>Карты</ContentBox>
             <ContentBox way={Gmail}>Почта</ContentBox>
